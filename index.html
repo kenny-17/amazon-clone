@@ -1,0 +1,244 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ </head>
+ <header>
+    <div class="navbar">
+        <div class=" logo border"><img id="logo" src="vec.png"> </div>
+        <div class="location border">
+         <p id="firstly">Deliver to</p>
+         <div id="loc">
+             <i class="fa-solid fa-location-dot"></i>
+             <p id="secondly">India</p>
+         </div>
+     </div>
+     <div class="search">
+        <select class="drop">
+         <option>All</option>
+      </select>
+         <input class="searchbar"  placeholder="Search Amazon" >
+         <button class="sIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="country border">
+      <div class="flag"></div>
+      <p>EN</p>
+    </div>
+    <div class="acc border">
+      <p class="one">Hello,sign in</p>
+      <p class="two">Account & Lists</p>
+    </div>
+    <div class="ord border">
+      <p class="one">Returns</p>
+      <p class="two">& Orders</p>
+    </div>
+    <div class="cart border">
+      <button id="cIcon"><i class="fa-solid fa-cart-shopping"></i></button>
+      Cart
+   </div>
+    </div>
+    <div class="nav2">
+      <div class="A border">
+         <div><i class="fa-solid fa-bars"></i></div>
+         <div>All</div>
+      </div>
+      <div class="others">
+      <div class="border" style="margin-left: 10px;">Today's Deals</div>
+      <div class="border" style="margin-left: 10px;">Customer Service</div>
+      <div class="border" style="margin-left: 10px;">Registry</div>
+      <div class="border" style="margin-left: 10px;">Gift Cards</div>
+      <div class="border" style="margin-left: 10px;">Sell</div>
+      </div>
+    </div>
+   </header>
+   <div class="hero">
+    <div class="hero-msg">
+        You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+        <a style="color: #007185;" href="https://www.amazon.in/">Click here to go to amazon.in</a>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<script>
+        let currentSlide = 0;
+        const slides = [
+            'url(banner3.jpg)',
+            'url(hero.jpg)',
+            'url(banner5.jpg)',
+            'url(banner6.jpg)',
+            'url(banner.jpg)',
+            'url(banner2.jpg)'
+        ];
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            document.querySelector('.hero').style.backgroundImage = slides[currentSlide];
+            resetAutoSlide();
+        }
+
+        function autoSlide() {
+            changeSlide(1);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(autoSlide, 5000);
+        }
+
+        let autoSlideInterval = setInterval(autoSlide, 5000)
+        
+        
+</script>
+   <body style="background-color: #E3E6E6;">
+      <div class="main-container">
+         <div class="section">
+             <h2>Gaming accessories</h2>
+             <div class="boxes">
+                 <div class="box">
+                     <a href="#"><img src="headset.jpg" alt="headsets"></a>
+                     <div>Headsets</div>
+                 </div>
+                 <div class="box">
+                     <a href="#"><img src="keyb.jpg" alt="keyboards"></a>
+                     <div>Keyboards</div>
+                 </div>
+                 <div class="box">
+                     <a href="#"><img src="mouse.jpg" alt="Mouse"></a>
+                     <div>Mouse</div>
+                 </div>
+                 <div class="box">
+                     <a href="#"><img src="chair.jpg" alt="chair"></a>
+                     <div>Chairs</div>
+                 </div>
+             </div>
+             <a href="#" class="see-more">See More</a>
+         </div>
+ 
+         <div class="section">
+             <h2>Shop deals in Fashion</h2>
+             <div class="boxes">
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Jeans&rh=n%3A1040660%2Cn%3A1048188%2Cp_36%3A-5000&dc=&ds=v1%3AZrh2YeJ%2Bmo6tc5p1QJD9idnCpBDTF2pKNTUbGqlhFKk&crid=1TZCO6ZC2HZVA&qid=1684823801&rnid=2941120011&sprefix=jeans%2Caps%2C155&ref=sr_nr_n_4&pd_rd_w=IKCRZ&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="jeans.jpg" alt="Jeans"></a>
+                     <div>Jeans under $50</div>
+                 </div>
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Tops&rh=p_36%3A-2500&crid=19AKO4YZK6ZPJ&qid=1684823853&rnid=2661611011&sprefix=tops%2Caps%2C250&ref=sr_nr_p_36_5&pd_rd_w=IKCRZ&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="tops.jpg" alt="tops"></a>
+                     <div>Tops under $25</div>
+                 </div>
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Dresses&rh=p_36%3A-3000&crid=Y67PJX929LXO&qid=1684823891&rnid=2661611011&sprefix=dresses%2Caps%2C149&ref=sr_nr_p_36_5&pd_rd_w=IKCRZ&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="dress.jpg" alt="Dresses"></a>
+                     <div>Dresses under $30</div>
+                 </div>
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Shoes&rh=p_36%3A-5000&crid=1QEZIUFPCL3YZ&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=sr_nr_p_36_5&pd_rd_w=IKCRZ&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="shoes under.jpg" alt="Shoes"></a>
+                     <div>Shoes under $50</div>
+                 </div>
+             </div>
+             <a href="https://www.amazon.com/gp/goldbox/?ie=UTF8&ref_=nav_cs_gb&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%252215E8DB96732AF8CA9C14916141BB1C4C%2522%252C%2522departments%2522%253A%255B%25227147440011%2522%252C%25227192394011%2522%252C%2522679337011%2522%252C%25226358543011%2522%255D%252C%2522sorting%2522%253A%2522FEATURED%2522%257D&pd_rd_w=IKCRZ&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75" class="see-more">See all deals</a>
+         </div>
+ 
+         <div class="section">
+             <h2>Refresh your space</h2>
+             <div class="boxes">
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Dinnerware%20%26%20accessories&crid=IBML6MYDLJ4A&sprefix=dinnerware%20%26%20accessorie%2Caps%2C190&ref=nb_sb_noss&pd_rd_w=es6mt&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="dining.jpg" alt="dining"></a>
+                     <div>Dining</div>
+                 </div>
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Home&i=kitchen-intl-ship&crid=1QBODY970JKYC&sprefix=home%2Ckitchen-intl-ship%2C164&ref=nb_sb_noss_1&pd_rd_w=es6mt&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="home.jpg" alt="home"></a>
+                     <div>Home</div>
+                 </div>
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=Kitchen&i=kitchen-intl-ship&crid=2LRTV3593NEHX&sprefix=kitchen%2Ckitchen-intl-ship%2C202&ref=nb_sb_noss_1&pd_rd_w=es6mt&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="kit.jpg" alt="Kitchen"></a>
+                     <div>Kitchen</div>
+                 </div>
+                 <div class="box">
+                     <a href="https://www.amazon.com/s/?_encoding=UTF8&k=health%20and%20beauty&i=beauty-intl-ship&crid=2036DM6EKNYNA&sprefix=health%20and%20beauty%2Cbeauty-intl-ship%2C173&ref=nb_sb_noss_2&pd_rd_w=es6mt&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk"><img src="health.jpg" alt="space4"></a>
+                     <div>Health and Beauty</div>
+                 </div>
+             </div>
+             <a href="https://www.amazon.com/gp/goldbox/?ie=UTF8&ref_=nav_cs_gb&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%2522957D18D8132C0FCBA2EA0F57FEB9A3F8%2522%252C%2522departments%2522%253A%255B%25221055398%2522%255D%252C%2522sorting%2522%253A%2522BY_SCORE%2522%257D&pd_rd_w=es6mt&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75" class="see-more">See more</a>
+         </div>
+ 
+         <div class="section">
+             <h2>Deals in PCs</h2>
+             
+                 <div class="pc">
+                     <a href="https://www.amazon.com/gp/goldbox/?ie=UTF8&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%252219A70421F1B18305BA3C837E25E8FDF9%2522%252C%2522departments%2522%253A%255B%2522541966%2522%255D%252C%2522sorting%2522%253A%2522FEATURED%2522%257D&pd_rd_w=Ozwef&content-id=amzn1.sym.3a6a1f11-a96c-444b-b219-97322616eb92&pf_rd_p=3a6a1f11-a96c-444b-b219-97322616eb92&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk#dealsGridLinkAnchor"><img src="pc.jpg" alt="pc1"></a>
+                     
+                     <a style="text-align: left;" href="https://www.amazon.com/gp/goldbox/?ie=UTF8&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%252219A70421F1B18305BA3C837E25E8FDF9%2522%252C%2522departments%2522%253A%255B%2522541966%2522%255D%252C%2522sorting%2522%253A%2522FEATURED%2522%257D&pd_rd_w=Ozwef&content-id=amzn1.sym.3a6a1f11-a96c-444b-b219-97322616eb92&pf_rd_p=3a6a1f11-a96c-444b-b219-97322616eb92&pf_rd_r=022400ETRQD5NPJ7CGXN&pd_rd_wg=ZtLqg&pd_rd_r=3531fb15-3cc1-4aa5-9b20-f3e88665ae75&ref_=pd_hp_d_atf_unk#dealsGridLinkAnchor" class="see-more">Shop now</a>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div style="background-color: #FFFFFF;" class="sgn">
+        <div class="signin">
+        <div class="txt1">See personalized recommendations</div>
+        <div><button id="signinbutton">Sign in</button></div>
+        <div class="txt2">New customer?<a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Start here.</a></div>
+     </div>
+    </div>
+     <div class="nav3">
+        Back to Top
+</div>
+<script>
+    document.querySelector('.nav3').addEventListener('click', function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+</script>
+   </body>
+<footer>
+    <div class="connect">
+        <div class="text">
+            <div class="about">
+                <h2>Get to Know Us</h2>
+                <a >About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+            </div>
+            <div class="social">
+                <h2>Connect with Us</h2>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+            </div>
+            <div class="money">
+                <h2>Make Money with Us</h2>
+                <a >Sell on Amazon</a>    
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Become an Affiliate</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>Amazon Pay on Merchants</a>
+            </div>
+            <div class="Helpyou">
+                <h2>Let Us Help you</h2>
+                <a>COVID-19 and Amazon</a>
+                <a>Your Account</a>
+                <a>Returns Centre</a>
+                <a>100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>Help</a>
+            </div>
+        </div>
+        <div class="terms">
+            <a>Conditions of Use & Sale</a>
+            <a>Privacy Notice</a>
+            <a>Interest-Based Ads</a>
+            <a>Ken</a>
+
+        </div>
+    </div>
+</footer>
+ </html>

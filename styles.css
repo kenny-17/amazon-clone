@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+.navbar {
+    background-color: #131A22;
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    height: 60px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    
+    
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+
+#logo {
+    height: 40px;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin:  1px 8px 0px 6px; 
+    padding: 0;
+    color: white;
+    background-color: transparent;
+}
+
+#firstly {
+color: #CCCCCC;
+font-size: 0.75rem;
+margin-left:15px ;
+}
+
+#secondly{
+    font-size: 1rem;
+    margin-left: 5px;
+
+}
+#loc{
+    display: flex;
+}
+.location{
+    width: 86.69px;
+    margin: 5px 2px 5px 0px ;
+    padding: 0px 9px;
+}
+.search{
+    display: flex;
+    width: 750px;
+    color: #0F1111;
+    height: 40px;
+    border: none;
+}
+.sIcon{
+    background-color: rgb(255, 213, 0);
+    width: 50px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+
+}
+.drop{
+    width: 51.6px;
+    padding-left: 5px;
+    text-align: center;
+    background-color: #E6E6E6;
+    color: #0F1111;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.searchbar{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search:hover{
+    border: 4px solid orange;
+    border-radius: 2px;
+
+}
+.country{
+    display: flex;
+    width: 73px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+    padding: 0px 9px 5px;
+}
+.flag{
+    height: 16.2px;
+    width: 21.6px;
+    background-color: #0F1111;
+    background-image: url('flag.png'); 
+    background-size: cover;
+    background-position: center; 
+    margin:  1px 8px 0px 6px; 
+    padding: 0;
+}
+.acc{
+    width: 131.53px;
+    color: #D6D6D6;
+}
+.ord{
+    width: 76.95px;
+    color: #D6D6D6;
+}
+.one{
+    font-size: 0.7rem;
+}
+.two{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: none; 
+}
+.cart i {
+    font-size: 35px;
+    color: #ffffff;
+    background-color: #131A22;
+    border: none; 
+}
+/* second nav bar */
+.nav2{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.A{
+    display: flex;
+    width: 58.41px;
+    justify-content: center;
+    margin-left: 9px;
+    
+
+}
+.others{
+    width: 90%;
+    display: flex;
+}
+.hero {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('banner3.jpg');
+    animation: slider 30s infinite ease-in-out;
+    margin-bottom: -150px;
+}
+
+
+.hero-msg {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; 
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 40px; /* Larger font size */
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 20px;
+}
+
+button.next {
+    right: 20px;
+}
+
+button.prev:hover, button.next:hover {
+font-size: 50px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 280px; 
+    max-width: 1202px; 
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.box {
+    text-align: center;
+    flex: 1 1 calc(50% - 20px); 
+    margin: 10px 0;
+    height: 90%;
+}
+
+.box img {
+    width: 140px;
+    height: 115px;
+}
+
+a {
+    text-decoration: none;
+    color: #007185;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.box div {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.see-more {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.pc{
+    padding-top: 10px;
+}
+.pc img{
+    width: 300px;
+    height: 300px;
+}
+.sgn{
+    height: 117px;
+    padding: 30px;
+}
+.signin{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#signinbutton{
+    color: black;
+    background-color: #F7BA1D;
+    text-shadow:rgb(255, 224, 147) 0px 1px 0px;
+    height: 30px;
+    width: 230px;
+    border-radius: 5px;
+    border: 4px white;
+    font-weight: 700;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    font-size: 12px;
+
+}
+.txt1{
+    
+    height: 1rem;
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+
+}
+.txt2{
+    margin-top: 3px;
+    height: 1rem;
+    font-size: 0.85rem;
+}
+.nav3{
+    height: 40px;
+    background-color: #2d3b4a;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav3:hover{
+    background-color: #37475A;
+    cursor: pointer;
+}
+.connect{
+    background-color: #222f3d;
+    color: #CCCCCC;
+    height: 500px;
+    border:  #222f3d solid;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    height: 80%;
+    margin-right: 10px;
+    padding-bottom: 10px;
+
+}
+.text a {
+    display: block;
+    color: #DDDDDD;
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+.text h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+}
+.terms{
+    background-color: #131A22;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms a {
+    color: white;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
